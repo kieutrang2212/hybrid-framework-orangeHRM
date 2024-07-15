@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Nopcommerce" verbose="1">
+    <test name="Run on Firefox">
+        <classes>
+            <class name="nopcommerce_account.Account_01_Register"/>
+        </classes>
+    </test>
+
+</suite>
