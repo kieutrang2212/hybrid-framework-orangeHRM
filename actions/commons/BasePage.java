@@ -153,6 +153,10 @@ public class BasePage {
         return By.xpath(locator);
     }
 
+    public String getDynamicLocator(String locator,String... value){
+        return String.format(locator,(Object[])value);
+    }
+
     public WebElement getWebElement(WebDriver driver, String locator){
         return driver.findElement(getByLocator(locator));
     }
@@ -165,13 +169,26 @@ public class BasePage {
         getWebElement(driver,locator).click();
     }
 
+    public void clickToElement(WebDriver driver, String locator,String... value){
+        getWebElement(driver,getDynamicLocator(locator, value)).click();
+    }
+
     public void sendkeyToElement(WebDriver driver, String locator, String valueToSend){
         getWebElement(driver,locator).clear();
         getWebElement(driver,locator).sendKeys(valueToSend);
     }
 
+    public void sendkeyToElement(WebDriver driver, String locator, String valueToSend,String...restParams){
+        getWebElement(driver,getDynamicLocator(locator, restParams)).clear();
+        getWebElement(driver,getDynamicLocator(locator, restParams)).sendKeys(valueToSend);
+    }
+
     public String getElementText(WebDriver driver, String locator){
         return getWebElement(driver,locator).getText();
+    }
+
+    public String getElementText(WebDriver driver, String locator,String...restParams){
+        return getWebElement(driver,getDynamicLocator(locator, restParams)).getText();
     }
 
     public void selectItemInDefaultDropdown(WebDriver driver, String locator, String itemValue){
@@ -205,6 +222,10 @@ public class BasePage {
         return getWebElement(driver,locator).getAttribute(attribute);
     }
 
+    public String getElementAttribute(WebDriver driver, String locator,String attribute,String...restParams){
+        return getWebElement(driver,getDynamicLocator(locator, restParams)).getAttribute(attribute);
+    }
+
     public String getElementCssValue(WebDriver driver, String locator, String cssPropertyName){
         return getWebElement(driver,locator).getCssValue(cssPropertyName);
 
@@ -228,6 +249,10 @@ public class BasePage {
 
     public boolean isElementDisplayed(WebDriver driver, String locator){
         return getWebElement(driver,locator).isDisplayed();
+    }
+
+    public boolean isElementDisplayed(WebDriver driver, String locator,String...restParams){
+        return getWebElement(driver,getDynamicLocator(locator, restParams)).isDisplayed();
     }
 
     public boolean isElementSelected(WebDriver driver, String locator){
@@ -329,6 +354,10 @@ public class BasePage {
         new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
     }
 
+    public void waitForElementVisible(WebDriver driver,String locator,String...restParams){
+        new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(getDynamicLocator(locator, restParams))));
+    }
+
     public void waitForListElementVisible(WebDriver driver,String locator){
         new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.visibilityOfAllElements(getListWebElement(driver,locator)));
     }
@@ -343,6 +372,10 @@ public class BasePage {
 
     public void waitForElementClickable(WebDriver driver,String locator){
         new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(getWebElement(driver, locator)));
+    }
+
+    public void waitForElementClickable(WebDriver driver,String locator,String...restParams){
+        new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(getWebElement(driver, getDynamicLocator(locator, restParams))));
     }
 
     public boolean isPageLoadedSuccess(WebDriver driver){
