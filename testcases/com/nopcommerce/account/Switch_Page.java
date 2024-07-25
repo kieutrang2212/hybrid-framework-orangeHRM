@@ -1,4 +1,4 @@
-package nopcommerce_account;
+package com.nopcommerce.account;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import pageObjects.user.*;
 
 
-public class Dynamic_Locator_Rest_Param extends BaseTest {
+public class Switch_Page extends BaseTest {
     private WebDriver driver;
     private HomePageObject homePage;
     private UserLoginPageObject loginPage;
@@ -71,27 +71,19 @@ public class Dynamic_Locator_Rest_Param extends BaseTest {
     @Test
     public void User_03_Switch_Page(){
         //Customer Page-> Address Page
-        addressPage=(AddressPageObject) customerPage.openDynamicSideBarPage("Addresses");
+        addressPage=customerPage.openAddressPage();
         //Address Page -> Order Page
-        orderPage=(OrderPageObject) addressPage.openDynamicSideBarPage("Orders");
+        orderPage=addressPage.openOrderPage();
         //Order Page -> Customer Page
-        customerPage=(CustomerPageObject) orderPage.openDynamicSideBarPage("Customer info");
+        customerPage=orderPage.openCustomerPage();
         //Customer Page -> Order Page
-        orderPage=(OrderPageObject) customerPage.openDynamicSideBarPage("Orders");
+        orderPage=customerPage.openOrderPage();
         //Order Page -> Address Page
-        addressPage=(AddressPageObject) orderPage.openDynamicSideBarPage("Addresses");
+        addressPage=orderPage.openAddressPage();
         // Address Page -> RewardPointPage
-        rewardPointPage=(RewardPointPageObject) addressPage.openDynamicSideBarPage("Reward points");
+        rewardPointPage=addressPage.openRewardPointPage();
 
 
-    }
-    @Test
-    public void User_04_Switch_Page(){
-       rewardPointPage.openDynamicSideBarPageByName("Customer info");
-       customerPage=PageGeneratorManager.getCustomerPage(driver);
-
-       customerPage.openDynamicSideBarPageByName("Addresses");
-       addressPage=PageGeneratorManager.getAddressPage(driver);
     }
 
     @AfterClass

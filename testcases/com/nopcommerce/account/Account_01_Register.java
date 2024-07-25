@@ -1,4 +1,4 @@
-package nopcommerce_account;
+package com.nopcommerce.account;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;

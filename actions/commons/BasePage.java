@@ -165,6 +165,10 @@ public class BasePage {
         return driver.findElements(getByLocator(locator));
     }
 
+    public List<WebElement> getListWebElement(WebDriver driver, String locator,String...restParams){
+        return driver.findElements(getByLocator(getDynamicLocator(locator, restParams)));
+    }
+
     public void clickToElement(WebDriver driver, String locator){
         getWebElement(driver,locator).click();
     }
@@ -189,6 +193,10 @@ public class BasePage {
 
     public String getElementText(WebDriver driver, String locator,String...restParams){
         return getWebElement(driver,getDynamicLocator(locator, restParams)).getText();
+    }
+
+    public void selectItemInDefaultDropdown(WebDriver driver, String locator, String itemValue,String...restParams){
+        new Select(getWebElement(driver,getDynamicLocator(locator, restParams))).selectByVisibleText(itemValue);
     }
 
     public void selectItemInDefaultDropdown(WebDriver driver, String locator, String itemValue){
@@ -235,9 +243,18 @@ public class BasePage {
         return getListWebElement(driver, locator).size();
     }
 
+    public int getListElementSize(WebDriver driver, String locator,String...restParams){
+        return getListWebElement(driver,getDynamicLocator(locator, restParams)).size();
+    }
+
     public void checkToElement(WebDriver driver, String locator){
         if(!getWebElement(driver,locator).isSelected()){
             getWebElement(driver,locator).click();
+        }
+    }
+    public void checkToElement(WebDriver driver, String locator,String...restParams){
+        if(!getWebElement(driver,getDynamicLocator(locator, restParams)).isSelected()){
+            getWebElement(driver,getDynamicLocator(locator, restParams)).click();
         }
     }
 
@@ -340,6 +357,11 @@ public class BasePage {
     public void removeAttributeInDOM(WebDriver driver,String locator, String attributeRemove){
         ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('value','"+attributeRemove+"')",getWebElement(driver,locator));
     }
+
+    public void removeAttributeInDOM(WebDriver driver,String locator, String attributeRemove,String...restParams){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('value','"+attributeRemove+"')",getWebElement(driver,getDynamicLocator(locator, restParams)));
+    }
+
 
     public String getElementValidationMessage(WebDriver driver,String locator){
         return (String) ((JavascriptExecutor) driver).executeScript("return arguments[0].validationMessage",getWebElement(driver,locator));
