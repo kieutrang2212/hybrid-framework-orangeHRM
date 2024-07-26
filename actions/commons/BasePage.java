@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pageUIs.user.BasePageUI;
 
 import java.time.Duration;
 import java.util.List;
@@ -13,6 +14,8 @@ import java.util.Set;
 
 public class BasePage {
     WebDriver driver;
+
+
     /*Web Browser*/
     public void openPageUrl(WebDriver driver,String url){
         driver.get(url);
@@ -171,6 +174,10 @@ public class BasePage {
 
     public void clickToElement(WebDriver driver, String locator){
         getWebElement(driver,locator).click();
+    }
+
+    public void clickToElement(WebDriver driver, WebElement element){
+        element.click();
     }
 
     public void clickToElement(WebDriver driver, String locator,String... value){
@@ -400,6 +407,11 @@ public class BasePage {
         new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(getWebElement(driver, getDynamicLocator(locator, restParams))));
     }
 
+    public void waitForElementClickable(WebDriver driver,WebElement element){
+        new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+
     public boolean isPageLoadedSuccess(WebDriver driver){
         WebDriverWait explicitWait = new WebDriverWait(driver,Duration.ofSeconds(longTimeout));
         JavascriptExecutor jsExecutor =(JavascriptExecutor) driver;
@@ -420,7 +432,18 @@ public class BasePage {
         return explicitWait.until(jQueryLoad)&& explicitWait.until(jsLoad);
     }
 
+    public void uploadMultipleFiles(WebDriver driver,String... fileNames){
+        String filePath=GlobalConstants.UPLOAD_PATH;
+        String fullFileName="";
+        for(String file: fileNames){
+            fullFileName = fullFileName  + filePath+file+ "\n";
+        }
+        fullFileName = fullFileName.trim();
+        getWebElement(driver, BasePageUI.UPLOAD_FILE_TYPE).sendKeys(fullFileName);
+    }
+
     private long longTimeout= GlobalConstants.LONG_TIMEOUT;
+
 
 
 }

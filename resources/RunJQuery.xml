@@ -2,11 +2,11 @@
 
 <suite name="DataTable-DataGrid" verbose="1">
 
-    <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"/>
+    <parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/"/>
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.jquery.table.Handle_DataTable"/>
+            <class name="com.jquery.upload.Upload_File"/>
         </classes>
     </test>
 
