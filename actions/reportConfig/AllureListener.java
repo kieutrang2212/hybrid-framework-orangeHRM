@@ -1,4 +1,4 @@
-package reportConfigs;
+package reportConfig;
 
 public class AllureListener {
 }
