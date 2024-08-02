@@ -1,4 +1,4 @@
-package retryConfigs;
+package retryConfig;
 
 public class RetryAnalyzer {
 }

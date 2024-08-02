@@ -4,14 +4,12 @@
 
     <listeners>
         <listener class-name="commons.MethodListener"/>
-        <listener class-name="reportConfig.ReportNGListener"/>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="reportConfig.AllureTestListener"/>
     </listeners>
     <test name="Run on Firefox">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="com.nopcommerce.account.Log"/>
+            <class name="com.nopcommerce.account.Allure_Report"/>
         </classes>
     </test>
 
