@@ -1,14 +1,16 @@
 package pageObjects.user;
 
+import commons.BaseElement;
 import commons.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import pageUIs.user.RegisterPageUI;
 
-public class RegisterPageObject extends BasePage {
+public class RegisterPageObject extends BaseElement {
     WebDriver driver;
 
     public RegisterPageObject(WebDriver driver) {
+        super(driver);
         this.driver = driver;
     }
 
@@ -43,11 +45,6 @@ public class RegisterPageObject extends BasePage {
         return getElementText(driver,RegisterPageUI.CONFIRM_PASSWORD_ERROR_MSG);
     }
 
-    public HomePageObject clickToNopCommerceLogo() {
-        waitForElementClickable(driver,RegisterPageUI.NOPCOMMERCE_LOGO);
-        clickToElement(driver,RegisterPageUI.NOPCOMMERCE_LOGO);
-        return new HomePageObject(driver);
-    }
 
     @Step("Enter to First Name textbox with value is {0}")
     public void enterToFirstNameTextbox(String firstNameValue) {
