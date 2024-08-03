@@ -271,9 +271,31 @@ public class BasePage {
         }
     }
 
+    public void overrideGlobalTimeout(WebDriver driver, long timeOut){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));
+    }
+
     public boolean isElementDisplayed(WebDriver driver, String locator){
         return getWebElement(driver,locator).isDisplayed();
     }
+
+    public boolean isElementUndisplayed(WebDriver driver, String locator) {
+        overrideGlobalTimeout(driver, shortTimeout);
+        List<WebElement> elements= getListWebElement(driver,locator);
+        overrideGlobalTimeout(driver, longTimeout);
+
+        if (elements.size() == 0) {
+            System.out.println("Element not in DOM");
+            return true;
+        } else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+            System.out.println("Element in DOM but not visible/ displayed");
+            return true;
+        } else {
+            System.out.println("Element in DOM and visible");
+            return false;
+        }
+    }
+
 
     public boolean isElementDisplayed(WebDriver driver, String locator,String...restParams){
         return getWebElement(driver,getDynamicLocator(locator, restParams)).isDisplayed();
@@ -443,7 +465,6 @@ public class BasePage {
     }
 
     private long longTimeout= GlobalConstants.LONG_TIMEOUT;
-
-
+    private long shortTimeout=GlobalConstants.SHORT_TIMEOUT;
 
 }
