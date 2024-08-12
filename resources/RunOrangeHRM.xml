@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM" verbose="1">
+
+    <listeners>
+        <listener class-name="reportConfig.ExtentTestListener"/>
+    </listeners>
+
+    <parameter name="url" value="http://localhost:90/orangehrm5/web/index.php/auth/login"/>
+    <test name="Run on Firefox" preserve-order="true">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.orangehrm.pim.PIM_01_Employee"/>
+        </classes>
+    </test>
+
+
+
+</suite>

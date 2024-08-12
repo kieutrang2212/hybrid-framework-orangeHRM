@@ -222,7 +222,7 @@ public class BasePage {
         getWebElement(driver,parentLocator).click();
         sleepInSeconds(1);
 
-        List<WebElement> speedDropdownItem= new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(childLocator)));
+        List<WebElement> speedDropdownItem= new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childLocator)));
 
         for(WebElement tempItem: speedDropdownItem){
             if(tempItem.getText().trim().equals(expectedTextItem)){
@@ -254,11 +254,13 @@ public class BasePage {
         return getListWebElement(driver,getDynamicLocator(locator, restParams)).size();
     }
 
+//    Default Checkbox/Radio
     public void checkToElement(WebDriver driver, String locator){
         if(!getWebElement(driver,locator).isSelected()){
             getWebElement(driver,locator).click();
         }
     }
+
     public void checkToElement(WebDriver driver, String locator,String...restParams){
         if(!getWebElement(driver,getDynamicLocator(locator, restParams)).isSelected()){
             getWebElement(driver,getDynamicLocator(locator, restParams)).click();
@@ -303,6 +305,10 @@ public class BasePage {
 
     public boolean isElementSelected(WebDriver driver, String locator){
         return getWebElement(driver,locator).isSelected();
+    }
+
+    public boolean isElementSelected(WebDriver driver, String locator,String...restParams){
+        return getWebElement(driver,getDynamicLocator(locator, restParams)).isSelected();
     }
 
     public boolean isElementEnabled(WebDriver driver, String locator){
@@ -369,6 +375,10 @@ public class BasePage {
 
     public void clickToElementByJS(WebDriver driver, String locator){
         ((JavascriptExecutor) driver).executeScript("arguments[0].click()",getWebElement(driver,locator));
+    }
+
+    public void clickToElementByJS(WebDriver driver, String locator,String...restParams){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click()",getWebElement(driver,getDynamicLocator(locator, restParams)));
     }
 
     public void scrollToElementOnTop(WebDriver driver, String locator){

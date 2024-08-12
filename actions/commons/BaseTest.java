@@ -46,11 +46,9 @@ public class BaseTest {
                 throw new RuntimeException("Browser name is not valid");
         }
 
-        driver.manage().window().setPosition(new Point(0,0));
-        driver.manage().window().setSize(new Dimension(1920,1080));
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
         driver.get("https://demo.nopcommerce.com/");
+        driver.manage().window().maximize();
         return driver;
     }
 
@@ -70,11 +68,9 @@ public class BaseTest {
                 throw new RuntimeException("Browser name is not valid");
         }
 
-        driver.manage().window().setPosition(new Point(0,0));
-        driver.manage().window().setSize(new Dimension(1920,1080));
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
         driver.get(url);
+        driver.manage().window().maximize();
         return driver;
     }
 
