@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="5"
+           failures="1"
+           errors="0"
+           skipped="4"
+           time="0.017">
+  <properties />
+            <testcase name="afterClass" time="0.017" classname="com.nopcommerce.cookie.Product">
+                <failure type="java.lang.NullPointerException"
+                  message="Cannot invoke &quot;String.isEmpty()&quot; because &quot;command&quot; is null"
+              >
+<![CDATA[java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "command" is null
+  java.base/java.lang.Runtime.exec(Runtime.java:411)
+  java.base/java.lang.Runtime.exec(Runtime.java:315)
+  commons.BaseTest.closedBrowser(BaseTest.java:122)
+  com.nopcommerce.cookie.Product.afterClass(Product.java:61)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:568)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+  org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+  org.testng.internal.invokers.TestMethodWorker.invokeAfterClassConfigurations(TestMethodWorker.java:238)
+  org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:223)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:137)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:739)
+  org.testng.TestRunner.run(TestRunner.java:614)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+  org.testng.SuiteRunner.run(SuiteRunner.java:312)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+  org.testng.TestNG.runSuites(TestNG.java:1112)
+  org.testng.TestNG.run(TestNG.java:1079)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="beforeClass" time="0.0" classname="com.nopcommerce.cookie.Product">
+          <skipped />
+    </testcase>
+            <testcase name="Product_03_Delete_Product" time="0.0" classname="com.nopcommerce.cookie.Product">
+          <skipped />
+    </testcase>
+            <testcase name="Product_01_Create_New_Product" time="0.0" classname="com.nopcommerce.cookie.Product">
+          <skipped />
+    </testcase>
+            <testcase name="Product_02_Edit_Product" time="0.0" classname="com.nopcommerce.cookie.Product">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

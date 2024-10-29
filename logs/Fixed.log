@@ -1,0 +1,173 @@
+[01-08-2024 00:53:00.364 INFO com.nopcommerce.account.Log] - Register - Step 01: Verify Register link is displayed
+[01-08-2024 00:53:00.479 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 00:53:00.479 INFO com.nopcommerce.account.Log] - Register - Step 02: Click to Register link
+[01-08-2024 00:53:01.556 INFO com.nopcommerce.account.Log] - Register - Step 03: Click to Register button
+[01-08-2024 00:53:02.082 INFO com.nopcommerce.account.Log] - Register - Step 04: Verify error message at FirstName textbox
+[01-08-2024 00:53:02.135 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 00:53:02.136 INFO com.nopcommerce.account.Log] - Register - Step 05: Verify error message at LastName textbox
+[01-08-2024 00:53:02.180 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 00:53:02.181 INFO com.nopcommerce.account.Log] - Register - Step 06: Enter to FirstName textboxTrang
+[01-08-2024 00:53:02.413 INFO com.nopcommerce.account.Log] - Register - Step 07: Enter to LastName textboxNguyen
+[01-08-2024 00:53:02.522 INFO com.nopcommerce.account.Log] - Register - Step 08: Enter to Email Address textboxtrang59264@gmail.com
+[01-08-2024 00:53:02.571 INFO com.nopcommerce.account.Log] - Register - Step 09: Enter to Password textbox123456
+[01-08-2024 00:53:02.633 INFO com.nopcommerce.account.Log] - Register - Step 10: Enter to Confirm Password textbox123456
+[01-08-2024 00:53:02.700 INFO com.nopcommerce.account.Log] - Register - Step 11: Click to Register button
+[01-08-2024 00:53:03.479 INFO com.nopcommerce.account.Log] - Register - Step 12: Verify success message is displayed
+[01-08-2024 10:03:38.356 INFO com.nopcommerce.account.Log] - Register - Step 01: Verify Register link is displayed
+[01-08-2024 10:03:38.919 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 10:03:38.920 INFO com.nopcommerce.account.Log] - Register - Step 02: Click to Register link
+[01-08-2024 10:03:40.389 INFO com.nopcommerce.account.Log] - Register - Step 03: Click to Register button
+[01-08-2024 10:03:40.916 INFO com.nopcommerce.account.Log] - Register - Step 04: Verify error message at FirstName textbox
+[01-08-2024 10:03:41.071 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 10:03:41.071 INFO com.nopcommerce.account.Log] - Register - Step 05: Verify error message at LastName textbox
+[01-08-2024 10:03:41.147 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 10:03:41.147 INFO com.nopcommerce.account.Log] - Register - Step 06: Enter to FirstName textboxTrang
+[01-08-2024 10:03:41.277 INFO com.nopcommerce.account.Log] - Register - Step 07: Enter to LastName textboxNguyen
+[01-08-2024 10:03:41.403 INFO com.nopcommerce.account.Log] - Register - Step 08: Enter to Email Address textbox trang86777@gmail.com
+[01-08-2024 10:03:41.540 INFO com.nopcommerce.account.Log] - Register - Step 09: Enter to Password textbox 123456
+[01-08-2024 10:03:41.675 INFO com.nopcommerce.account.Log] - Register - Step 10: Enter to Confirm Password textbox 123456
+[01-08-2024 10:03:41.760 INFO com.nopcommerce.account.Log] - Register - Step 11: Click to Register button
+[01-08-2024 10:03:42.677 INFO com.nopcommerce.account.Log] - Register - Step 12: Verify success message is displayed
+[01-08-2024 10:03:42.740 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 10:54:44.529 INFO com.nopcommerce.account.Log] - Register - Step 01: Verify Register link is displayed
+[01-08-2024 10:54:44.830 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 10:54:44.831 INFO com.nopcommerce.account.Log] - Register - Step 02: Click to Register link
+[01-08-2024 10:54:46.013 INFO com.nopcommerce.account.Log] - Register - Step 03: Click to Register button
+[01-08-2024 10:54:46.488 INFO com.nopcommerce.account.Log] - Register - Step 04: Verify error message at FirstName textbox
+[01-08-2024 10:54:46.536 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 10:54:46.536 INFO com.nopcommerce.account.Log] - Register - Step 05: Verify error message at LastName textbox
+[01-08-2024 10:54:46.579 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 10:54:46.581 INFO com.nopcommerce.account.Log] - Register - Step 06: Enter to FirstName textboxTrang
+[01-08-2024 10:54:46.658 INFO com.nopcommerce.account.Log] - Register - Step 07: Enter to LastName textboxNguyen
+[01-08-2024 10:54:46.741 INFO com.nopcommerce.account.Log] - Register - Step 08: Enter to Email Address textbox trang67873@gmail.com
+[01-08-2024 10:54:46.831 INFO com.nopcommerce.account.Log] - Register - Step 09: Enter to Password textbox 123456
+[01-08-2024 10:54:46.900 INFO com.nopcommerce.account.Log] - Register - Step 10: Enter to Confirm Password textbox 123456
+[01-08-2024 10:54:46.968 INFO com.nopcommerce.account.Log] - Register - Step 11: Click to Register button
+[01-08-2024 10:54:47.709 INFO com.nopcommerce.account.Log] - Register - Step 12: Verify success message is displayed
+[01-08-2024 10:54:47.829 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 11:11:23.461 INFO com.nopcommerce.account.Log] - Register - Step 01: Verify Register link is displayed
+[01-08-2024 11:11:23.704 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 11:11:23.704 INFO com.nopcommerce.account.Log] - Register - Step 02: Click to Register link
+[01-08-2024 11:11:24.747 INFO com.nopcommerce.account.Log] - Register - Step 03: Click to Register button
+[01-08-2024 11:11:25.195 INFO com.nopcommerce.account.Log] - Register - Step 04: Verify error message at FirstName textbox
+[01-08-2024 11:11:25.307 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 11:11:25.307 INFO com.nopcommerce.account.Log] - Register - Step 05: Verify error message at LastName textbox
+[01-08-2024 11:11:25.349 INFO com.nopcommerce.account.Log] - ---------------------- Failed -----------------------
+[01-08-2024 11:11:25.350 INFO com.nopcommerce.account.Log] - Register - Step 06: Enter to FirstName textboxTrang
+[01-08-2024 11:11:25.413 INFO com.nopcommerce.account.Log] - Register - Step 07: Enter to LastName textboxNguyen
+[01-08-2024 11:11:25.509 INFO com.nopcommerce.account.Log] - Register - Step 08: Enter to Email Address textbox trang62773@gmail.com
+[01-08-2024 11:11:25.590 INFO com.nopcommerce.account.Log] - Register - Step 09: Enter to Password textbox 123456
+[01-08-2024 11:11:25.670 INFO com.nopcommerce.account.Log] - Register - Step 10: Enter to Confirm Password textbox 123456
+[01-08-2024 11:11:25.738 INFO com.nopcommerce.account.Log] - Register - Step 11: Click to Register button
+[01-08-2024 11:11:26.423 INFO com.nopcommerce.account.Log] - Register - Step 12: Verify success message is displayed
+[01-08-2024 11:11:26.497 INFO com.nopcommerce.account.Log] - ---------------------- Passed -----------------------
+[01-08-2024 17:05:03.920 INFO com.nopcommerce.account.Extent_V5] - ---------------------- Failed -----------------------
+[01-08-2024 17:05:05.765 INFO com.nopcommerce.account.Extent_V5] - ---------------------- Passed -----------------------
+[01-08-2024 17:05:05.798 INFO com.nopcommerce.account.Extent_V5] - ---------------------- Failed -----------------------
+[01-08-2024 17:05:07.070 INFO com.nopcommerce.account.Extent_V5] - ---------------------- Passed -----------------------
+[02-08-2024 01:06:25.139 INFO com.nopcommerce.account.Allure_Report] - ---------------------- Failed -----------------------
+[02-08-2024 01:06:26.729 INFO com.nopcommerce.account.Allure_Report] - ---------------------- Passed -----------------------
+[02-08-2024 01:06:26.761 INFO com.nopcommerce.account.Allure_Report] - ---------------------- Failed -----------------------
+[02-08-2024 01:06:27.863 INFO com.nopcommerce.account.Allure_Report] - ---------------------- Passed -----------------------
+[03-08-2024 11:20:31.174 INFO com.facebook.home.Element_Undisplayed] - Verify FirstName textbox is displayed
+[03-08-2024 11:20:31.757 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:20:31.758 INFO com.facebook.home.Element_Undisplayed] - Verify LastName textbox is displayed
+[03-08-2024 11:20:31.830 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:20:31.831 INFO com.facebook.home.Element_Undisplayed] - Verify Email textbox is displayed
+[03-08-2024 11:20:31.925 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:20:31.926 INFO com.facebook.home.Element_Undisplayed] - Verify Password textbox is displayed
+[03-08-2024 11:20:32.020 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:20:32.124 INFO com.facebook.home.Element_Undisplayed] - Verify Confirm Email textbox is displayed
+[03-08-2024 11:20:32.191 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:20:34.529 INFO com.facebook.home.Element_Undisplayed] - Verify Confirm Email textbox is not displayed
+[03-08-2024 11:21:07.892 INFO com.facebook.home.Element_Undisplayed] - Verify FirstName textbox is not displayed
+[03-08-2024 11:21:12.924 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:21:12.924 INFO com.facebook.home.Element_Undisplayed] - Verify LastName textbox is not displayed
+[03-08-2024 11:21:17.948 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:21:17.950 INFO com.facebook.home.Element_Undisplayed] - Verify Email textbox is not displayed
+[03-08-2024 11:21:22.968 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:21:22.968 INFO com.facebook.home.Element_Undisplayed] - Verify Password textbox is not displayed
+[03-08-2024 11:21:28.001 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:29:31.095 INFO com.facebook.home.Element_Undisplayed] - Verify FirstName textbox is displayed
+[03-08-2024 11:29:31.552 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:29:31.552 INFO com.facebook.home.Element_Undisplayed] - Verify LastName textbox is displayed
+[03-08-2024 11:29:31.662 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:29:31.662 INFO com.facebook.home.Element_Undisplayed] - Verify Email textbox is displayed
+[03-08-2024 11:29:31.783 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:29:31.784 INFO com.facebook.home.Element_Undisplayed] - Verify Password textbox is displayed
+[03-08-2024 11:29:31.830 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:29:31.999 INFO com.facebook.home.Element_Undisplayed] - Verify Confirm Email textbox is displayed
+[03-08-2024 11:29:32.031 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:29:35.155 INFO com.facebook.home.Element_Undisplayed] - Verify Confirm Email textbox is not displayed
+[03-08-2024 11:30:08.813 INFO com.facebook.home.Element_Undisplayed] - Verify FirstName textbox is not displayed
+[03-08-2024 11:30:13.843 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:30:13.844 INFO com.facebook.home.Element_Undisplayed] - Verify LastName textbox is not displayed
+[03-08-2024 11:30:18.858 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:30:18.859 INFO com.facebook.home.Element_Undisplayed] - Verify Email textbox is not displayed
+[03-08-2024 11:30:23.887 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:30:23.888 INFO com.facebook.home.Element_Undisplayed] - Verify Password textbox is not displayed
+[03-08-2024 11:30:28.905 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:06.049 INFO com.facebook.home.Element_Undisplayed] - Verify FirstName textbox is displayed
+[03-08-2024 11:34:06.499 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:06.500 INFO com.facebook.home.Element_Undisplayed] - Verify LastName textbox is displayed
+[03-08-2024 11:34:06.609 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:06.609 INFO com.facebook.home.Element_Undisplayed] - Verify Email textbox is displayed
+[03-08-2024 11:34:06.669 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:06.669 INFO com.facebook.home.Element_Undisplayed] - Verify Password textbox is displayed
+[03-08-2024 11:34:06.704 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:06.789 INFO com.facebook.home.Element_Undisplayed] - Verify Confirm Email textbox is displayed
+[03-08-2024 11:34:06.825 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:09.964 INFO com.facebook.home.Element_Undisplayed] - Verify Confirm Email textbox is not displayed
+[03-08-2024 11:34:09.999 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:13.319 INFO com.facebook.home.Element_Undisplayed] - Verify FirstName textbox is not displayed
+[03-08-2024 11:34:18.357 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:18.357 INFO com.facebook.home.Element_Undisplayed] - Verify LastName textbox is not displayed
+[03-08-2024 11:34:23.377 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:23.377 INFO com.facebook.home.Element_Undisplayed] - Verify Email textbox is not displayed
+[03-08-2024 11:34:28.396 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[03-08-2024 11:34:28.398 INFO com.facebook.home.Element_Undisplayed] - Verify Password textbox is not displayed
+[03-08-2024 11:34:33.431 INFO com.facebook.home.Element_Undisplayed] - ---------------------- Passed -----------------------
+[09-08-2024 23:31:15.152 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[09-08-2024 23:31:15.156 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (7f20dc33-87bf-4c59-b8bc-f3cbdd733f6b)
+[09-08-2024 23:35:18.036 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[09-08-2024 23:35:18.040 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (5c8f12dc-638d-42a1-8eac-00b1fb7034f9)
+[09-08-2024 23:38:35.192 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[09-08-2024 23:38:35.197 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (075060a2-75bb-48a2-80f4-69c74c631acb)
+[09-08-2024 23:43:01.864 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[09-08-2024 23:43:01.873 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (07b0b8f4-f7fb-49a1-b895-431a2acdc386)
+[10-08-2024 09:35:41.168 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 09:35:41.174 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (6f0e0c07-b783-42b8-a0c7-44cbc1b0bf68)
+[10-08-2024 09:44:36.221 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 09:44:36.229 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (b6ef2818-3f10-4b34-90e6-0bd329e56fac)
+[10-08-2024 09:47:25.367 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 09:47:25.369 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (88cf0e69-debb-4821-8189-aeed96fe002f)
+[10-08-2024 10:08:31.009 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 10:08:31.011 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (30464df9-c22b-43f5-8dbe-3dc8a4423b9d)
+[10-08-2024 10:10:01.155 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 10:10:01.161 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (5d4f31d8-f9ef-40bd-8082-ec3877dee9ec)
+[10-08-2024 15:32:10.701 INFO com.nopcommerce.cookie.Product] - OS name = windows 11
+[10-08-2024 15:32:10.707 INFO com.nopcommerce.cookie.Product] - Cannot invoke "Object.toString()" because "this.driver" is null
+[10-08-2024 19:07:10.840 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 19:07:10.845 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (628bc231-28f2-4233-8888-01a192f80a29)
+[10-08-2024 19:11:55.442 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 19:11:55.448 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (6a4581c8-16b5-4b32-9619-69ea96cf5453)
+[10-08-2024 19:28:21.108 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 19:28:21.112 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (a2221cc5-58d8-4439-9feb-e52c956127f6)
+[10-08-2024 19:42:16.061 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 19:42:16.070 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (68cd200b-aa79-473c-87f6-3538f4b058db)
+[10-08-2024 21:41:45.157 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 21:41:45.165 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (826b3eae-e344-4c04-8a33-e71b43ecf09b)
+[10-08-2024 21:46:50.726 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 21:46:50.733 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (8258f791-9d02-47b5-b679-25d2aa2e6f6e)
+[10-08-2024 21:49:47.070 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 21:49:47.076 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (30ae916c-90a4-4209-bd9f-f28dc578b77d)
+[10-08-2024 21:51:55.410 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 21:51:55.416 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (e7698ece-4785-4e70-b8b3-bd8ac77188ce)
+[10-08-2024 22:00:03.670 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[10-08-2024 22:00:03.677 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (ab2b1fe0-db33-4eea-85a8-b4f5aaf80d54)
+[27-08-2024 13:51:50.911 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[27-08-2024 13:51:50.918 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (f223d819-3465-4868-8fc9-320a49938316)
+[28-08-2024 14:08:16.020 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[28-08-2024 14:08:16.023 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (1cb19a3d-c435-4d28-83a4-618df411c166)
+[28-08-2024 15:14:37.984 INFO com.orangehrm.pim.PIM_01_Employee] - OS name = windows 11
+[28-08-2024 15:14:37.993 INFO com.orangehrm.pim.PIM_01_Employee] - Driver instance name = firefoxdriver: firefox on windows (1fe510fd-a042-4932-891b-2e1c60f747a8)
