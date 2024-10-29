@@ -29,6 +29,6 @@ public class VerificationFailures extends HashMap<ITestResult, List<Throwable>> 
         put(result, exceptions);
     }
 
-    private static final long serialVersionUID = 1L;
+    private static final long serialversionuid = 1l;
     private static VerificationFailures failures;
 }

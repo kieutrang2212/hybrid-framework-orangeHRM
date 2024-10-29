@@ -15,20 +15,20 @@ import java.lang.reflect.Method;
 
 public class PIM_01_Employee extends BaseTest {
     private WebDriver driver;
-    private String browserName,employeeID,firstName,lastName,nickName;
-    private String driverLicenseNumber,licenseExpiryDate,ssnNumber,sinNumber,nationality,maritalStatus;
-    private String dateOfBirth,genderStatus,smokerStatus;
     private LoginPageObject loginPage;
     private DashboardPageObject dashboardPage;
     private EmployeeListPageObject employeeListPage;
     private AddEmployeePageObject addEmployeePage;
     private PersonalDetailsPageObject personalDetailsPage;
+    private ContactDetailsPageObject contactDetailsPage;
+    private EmergencyContactsPageObject emergencyContactPage;
 
     @Parameters({"url","browser"})
     @BeforeClass
     public void beforeClass(String url, String browserName){
         driver=getBrowserDriver(browserName,url);
         this.browserName=browserName;
+
         firstName="Michael";
         lastName="Owen";
         nickName="golden_boy";
@@ -41,6 +41,20 @@ public class PIM_01_Employee extends BaseTest {
         dateOfBirth="1986-10-10";
         genderStatus="Male";
         smokerStatus="Yes";
+
+        street1="123 Main Street";
+        city="New York";
+        state="New York";
+        postalCode="10001";
+        country="United States";
+        homeTelephone="(212) 555-1234";
+        moblieTelephone="(917) 555-5678";
+        workTelephone="(646) 555-7890";
+        workEmail=getEmailAddress();
+
+        nameOfRelative="Tom Hiddleston";
+        relationship="Dad";
+        homeTelephoneOfRalative="(212) 555-2235";
 
         loginPage= PageGeneratorManager.getLoginPage(driver);
 
@@ -122,6 +136,38 @@ public class PIM_01_Employee extends BaseTest {
     public void Employee_03_Contact_Details(Method method){
         ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_03_Contact_Details");
 
+       contactDetailsPage=personalDetailsPage.clickToContactDetailsButton();
+       contactDetailsPage.waitForSpinnerIconInvisible();
+
+       contactDetailsPage.enterToStreet1Textbox(street1);
+
+       contactDetailsPage.enterToCityTextbox(city);
+
+       contactDetailsPage.enterToStateTextbox(state);
+
+       contactDetailsPage.enterToPostalCodeTextbox(postalCode);
+
+       contactDetailsPage.selectToCountryDropdown(country);
+
+       contactDetailsPage.enterToHomeTelephoneTextbox(homeTelephone);
+
+       contactDetailsPage.enterToMoblieTelephoneTextox(moblieTelephone);
+
+       contactDetailsPage.enterToWorkTelephonrTextbox(workTelephone);
+
+       contactDetailsPage.enterToWorkEmailTextbox(workEmail);
+
+       contactDetailsPage.clickToSaveButtonAtContactDetailPart();
+
+        Assert.assertTrue(contactDetailsPage.isSuccessMessageDisplayed("Successfully Updated"));
+        contactDetailsPage.waitForSpinnerIconInvisible();
+
+        Assert.assertEquals( contactDetailsPage.getStreet1Value(),street1);
+        Assert.assertEquals( contactDetailsPage.getCityValue(),city);
+        Assert.assertEquals( contactDetailsPage.getStateValue(),state);
+        Assert.assertEquals(contactDetailsPage.getCountryDropdownSelectedText(),country);
+
+
 
     }
 
@@ -129,54 +175,35 @@ public class PIM_01_Employee extends BaseTest {
     public void Employee_04_Emergency_Contacts(Method method){
         ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_04_Emergency_Contacts");
 
+        emergencyContactPage = contactDetailsPage.clickToEmergencyContacts();
 
+        emergencyContactPage.waitForSpinnerIconInvisible();
+
+        emergencyContactPage.clickToAddButtonAtAssignedEmergencyContacts();
+
+        emergencyContactPage.waitForSpinnerIconInvisible();
+
+        emergencyContactPage.enterToNameOfRelativeTextbox(nameOfRelative);
+
+        emergencyContactPage.enterToRelationshipTextbox(relationship);
+
+        emergencyContactPage.enterToHomeTelephoneOfRelativeTextbox(homeTelephoneOfRalative);
+
+        emergencyContactPage.clickToSaveAtSaveEmergencyContact();
+
+        Assert.assertTrue(emergencyContactPage.isSuccessMessageDisplayed("Successfully Saved"));
+
+        emergencyContactPage.waitForSpinnerIconInvisible();
     }
 
-    @Test
-    public void Employee_05_Dependents(Method method){
-        ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_05_Dependents");
-
-
-    }
-
-    @Test
-    public void Employee_06_Immigration(Method method){
-        ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_06_Immigration");
-
-
-    }
-
-    @Test
-    public void Employee_07_Job(Method method){
-        ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_07_Job");
-
-
-    }
-
-    @Test
-    public void Employee_08_Salary(Method method){
-        ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_08_Salary");
-
-
-    }
-
-    @Test
-    public void Employee_09_Report(Method method){
-        ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_09_Report");
-
-
-    }
-
-    @Test
-    public void Employee_10_Qualifications(Method method){
-        ExtentTestManager.startTest(method.getName()+" - Run on "+browserName.toUpperCase(), "Employee_10_Qualifications");
-
-
-    }
 
     @AfterClass
     public void afterClass(){
         closedBrowser();
     }
-
+    private String browserName,employeeID,firstName,lastName,nickName;
+    private String driverLicenseNumber,licenseExpiryDate,ssnNumber,sinNumber,nationality,maritalStatus;
+    private String dateOfBirth,genderStatus,smokerStatus;
+    private String street1,city,state,postalCode,country,homeTelephone,moblieTelephone,workTelephone,workEmail;
+    private String nameOfRelative,relationship,homeTelephoneOfRalative;
 }

@@ -15,5 +15,6 @@
     <orderEntry type="library" name="commons-collections-3.2.1" level="project" />
     <orderEntry type="library" name="extentreports-5.1.2" level="project" />
     <orderEntry type="library" name="allure-java-commons-2.24.0" level="project" />
+    <orderEntry type="library" name="commons-lang3-3.5" level="project" />
   </component>
 </module>

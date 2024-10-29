@@ -23,5 +23,5 @@ public class PersonalDetailsPageUI {
     public static final String MARITAL_STATUS_DROPDOWN_SELECTED_TEXT="xpath=//label[text()='Marital Status']/parent::div/following-sibling::div//div[@class='oxd-select-text-input']";
 
     public static final String DATE_OF_BIRTH_PICKER="xpath=//label[text()='Date of Birth']/parent::div/following-sibling::div//input";
-
+    public static final String CONTACT_DETAIL_BUTTON="xpath=//a[text()='Contact Details']";
 }

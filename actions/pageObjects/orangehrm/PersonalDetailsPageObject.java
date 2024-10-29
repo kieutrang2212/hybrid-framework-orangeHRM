@@ -93,4 +93,9 @@ public class PersonalDetailsPageObject extends BaseActions {
         return getElementText(driver,PersonalDetailsPageUI.MARITAL_STATUS_DROPDOWN_SELECTED_TEXT);
     }
 
+    public ContactDetailsPageObject clickToContactDetailsButton() {
+        waitForElementClickable(driver,PersonalDetailsPageUI.CONTACT_DETAIL_BUTTON);
+        clickToElement(driver,PersonalDetailsPageUI.CONTACT_DETAIL_BUTTON);
+        return PageGeneratorManager.getContactDetailsPage(driver);
+    }
 }

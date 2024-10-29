@@ -1,6 +1,5 @@
 package pageObjects.user;
 
-import commons.BaseElement;
 import commons.PageGeneratorManager;
 import org.openqa.selenium.WebDriver;
 import pageUIs.user.MyAccountSideBarPageUI;
